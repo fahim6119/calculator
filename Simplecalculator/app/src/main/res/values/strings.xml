@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Simple calculator</string>
+    <color name="cyan">#00FFFF</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="bgc">#245C45</color>
+    <color name="bbcg">#82AD92</color>
+</resources>

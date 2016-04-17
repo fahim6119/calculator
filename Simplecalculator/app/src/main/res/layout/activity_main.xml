@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/bgc"
+    tools:context="com.example.dell.simplecalculator.MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="First Number"
+        android:id="@+id/textView"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/first_number" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:inputType="numberDecimal"
+        android:ems="15"
+        android:hint="Enter 1st number"
+        android:id="@+id/first_number"
+        android:background="@color/bbcg"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Second Number"
+        android:id="@+id/textView2"
+        android:textColor="@color/white"
+        android:layout_below="@+id/first_number"
+        android:layout_alignStart="@+id/second_number"
+        android:layout_marginTop="30dp" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:inputType="numberDecimal"
+        android:ems="15"
+        android:hint="Enter 2nd number"
+        android:id="@+id/second_number"
+        android:background="@color/bbcg"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/first_number" />
+
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MUL"
+        android:background="@color/bbcg"
+        android:id="@+id/multiply"
+        android:onClick="Multiply"
+        android:layout_below="@+id/second_number"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUB"
+        android:background="@color/bbcg"
+        android:id="@+id/subb"
+        android:onClick="Subtraction"
+        android:layout_alignTop="@+id/multiply"
+        android:layout_toLeftOf="@+id/multiply"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:background="@color/bbcg"
+        android:id="@+id/add"
+        android:onClick="Addition"
+        android:layout_alignTop="@+id/multiply"
+        android:layout_toLeftOf="@+id/subb"
+        android:layout_marginRight="20dp"
+        />
+
+
+
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DIV"
+        android:background="@color/bbcg"
+        android:id="@+id/divide"
+        android:onClick="Divide"
+        android:layout_alignTop="@+id/multiply"
+        android:layout_toRightOf="@+id/multiply"
+        android:layout_marginLeft="20dp"
+        />
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MOD"
+        android:background="@color/bbcg"
+        android:onClick="Modulo"
+        android:id="@+id/mod"
+        android:layout_alignTop="@+id/multiply"
+        android:layout_toRightOf="@+id/divide"
+        android:layout_marginLeft="20dp"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Result"
+        android:background="@color/bbcg"
+        android:id="@+id/result"
+        android:layout_below="@+id/multiply"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+
+
+
+</RelativeLayout>
